@@ -15,8 +15,8 @@ addons:
       - rsyslog
 before_script:
   - git --version
-  - apt-get update
-  - apt-get install -y git
+  - sudo apt-get update
+  - sudo apt-get install -y git
   - git --version
   - rsyslogd &
 script:
