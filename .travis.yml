@@ -14,6 +14,7 @@ addons:
     packages:
       - rsyslog
 before_script:
+  - git --version
   - rsyslogd &
 script:
   - make test
